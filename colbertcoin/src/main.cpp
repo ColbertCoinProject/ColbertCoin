@@ -2756,7 +2756,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "15/Feb/2014 Colbert Coin released";
+        const char* pszTimestamp = "15/Feb/2014 Russian reconnaissance satellite to hit Earth Sunday";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2768,13 +2768,13 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1392501562;
+        block.nTime    = 1392510546;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 2084524493;
 
         if (fTestNet)
         {
-            block.nTime    = 1392501562;
+            block.nTime    = 1392510546;
             block.nNonce   = 385270584;
         }
 
